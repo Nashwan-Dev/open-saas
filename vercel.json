@@ -1,0 +1,13 @@
+{
+  "buildCommand": "cd template/app && npm run build",
+  "outputDirectory": "template/app/.wasp/out/build",
+  "installCommand": "npm install && cd template/app && npm install",
+  "framework": null,
+  "redirects": [
+    {
+      "source": "/*",
+      "destination": "/index.html",
+      "statusCode": 200
+    }
+  ]
+}
