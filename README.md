@@ -1,128 +1,184 @@
-## Welcome to your new SaaS App! 🎉
+# Open SaaS
 
-<div style="display: flex; gap: 16px; align-items: center;">
-  <a href="https://www.producthunt.com/products/open-saas?embed=true&utm_source=badge-top-post-topic-badge&utm_medium=badge&utm_source=badge-open&#0045;saas&#0045;2&#0045;0" target="_blank">
-    <img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-topic-badge.svg?post_id=1023519&theme=neutral&period=weekly&topic_id=237&t=1760520428563" alt="Open&#0032;SaaS&#0032;2&#0046;0 - Free&#0044;&#0032;open&#0045;source&#0032;SaaS&#0032;starter&#0032;kit&#0032;with&#0032;superpowers | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" />
-  </a>
-  <a href="https://www.producthunt.com/products/open-saas?embed=true&utm_source=badge-top-post-badge&utm_medium=badge&utm_source=badge-open&#0045;saas&#0045;2&#0045;0" target="_blank">
-    <img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=1023519&theme=neutral&period=daily&t=1760520428563" alt="Open&#0032;SaaS&#0032;2&#0046;0 - Free&#0044;&#0032;open&#0045;source&#0032;SaaS&#0032;starter&#0032;kit&#0032;with&#0032;superpowers | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" />
-  </a>
-</div>
+A launch‑ready, open‑source SaaS boilerplate built on top of the Open SaaS ecosystem and the Wasp full‑stack framework.
 
-https://github.com/user-attachments/assets/3856276b-23e9-455e-a564-b5f26f4f0e98
+It keeps the strengths of the upstream project — React, Node.js, Prisma, authentication, payments, email, file uploads, background jobs, and an admin‑ready foundation — while aiming for a more polished product presentation, cleaner onboarding, and stronger release discipline.
 
-You've decided to build a SaaS app with the Open SaaS template. Great choice!
+## Demo & docs
 
-This template is:
+- Live demo: _coming soon_
+- Documentation: _coming soon_ (will cover setup, deployment, and customization flows)
 
-1. fully open-source
-2. completely free to use and distribute
-3. comes with a ton of features out of the box!
-4. ready to work with your favorite AI coding tool or agent (Claude Code, Cursor, Codex, OpenCode, etc.)
+> If you are evaluating this repository today, start from the README and the upstream Open SaaS and Wasp docs to understand the full development workflow.
 
-🧑‍💻 Check it out in action here: [OpenSaaS.sh](https://opensaas.sh)
-📚 Check out the Docs here: [Open SaaS Docs](https://docs.opensaas.sh)
+## Why this repository exists
 
-## What's inside?
+This repository is positioned as a production‑minded fork for teams that want the speed of Open SaaS with a more intentional launch posture: clearer messaging, stronger defaults, better documentation, and a tighter path from clone to deploy.
 
-The template itself is built on top of some very powerful tools and frameworks, including:
+The upstream Open SaaS project already provides a broad, batteries‑included foundation, which makes it a strong base for building and shipping modern SaaS products without paying for a proprietary starter kit.
 
-- 🐝 [Wasp](https://wasp.sh) - a full-stack React, NodeJS, Prisma framework with superpowers
-- 🚀 [Astro](https://starlight.astro.build/) - Astro's lightweight "Starlight" template for documentation and blog
-- 💸 [Stripe](https://stripe.com), [Polar.sh](https://polar.sh), or [Lemon Squeezy](https://lemonsqueezy.com/) - for products and payments
-- 💅 [ShadCN UI](https://tailwindcss.com) - for components & styling (plus admin dashboard!)
-- 🤖 [AI-Ready](https://docs.opensaas.sh/) - Custom Plugins, Skills, & Rules for AI-assisted coding with Claude Code, Cursor, or your favorite AI-assisted coding tool
-- 📈 [Plausible](https://plausible.io) or [Google](https://analytics.google.com/) Analytics
-- 🤖 [OpenAI](https://openai.com) - OpenAI API w/ function calling example
-- 📦 [AWS S3](https://aws.amazon.com/s3/) - for file uploads
-- 📧 [SendGrid](https://sendgrid.com), [MailGun](https://mailgun.com), or SMTP - for email sending
-- 🧪 [Playwright](https://playwright.dev) - end-to-end tests with Playwright
+This fork focuses on turning that technical foundation into something that feels closer to a release‑quality starter product rather than a generic template.
 
-Because we're using Wasp as the full-stack framework, we can leverage a lot of its features to build our SaaS in record time, including:
+## What is included
 
-- 🔐 [Full-stack Authentication](https://wasp.sh/docs/auth/overview) - Email verified + social Auth in a few lines of code.
-- ⛑ [End-to-end Type Safety](https://wasp.sh/docs/data-model/operations/overview) - Type your backend functions and get inferred types on the front-end automatically, without the need to install or configure any third-party libraries. Oh, and type-safe Links, too!
-- 🤖 [Jobs](https://wasp.sh/docs/advanced/jobs) - Run cron jobs in the background or set up queues simply by defining a function in the config file.
-- 🚀 [One-command Deploy](https://wasp.sh/docs/advanced/deployment/overview) - Easily deploy your DB, Server, & Client with one commaned to [Railway](https://railway.app) or [Fly.io](https://fly.io) via the CLI. Or deploy manually to any other hosting serivce of your choice.
+Open SaaS ships with the features most teams need to get from idea to first release faster:
 
-You also get access to Wasp's diverse, helpful community if you get stuck or need help.
+- Authentication with multiple providers.
+- Payments support for modern SaaS billing flows.
+- Email workflows and background jobs for operational tasks.
+- File uploads and production‑oriented infrastructure patterns.
+- An admin/dashboard foundation suitable for internal tooling and customer‑facing workflows.
+- Deployment paths documented through the Open SaaS ecosystem and Wasp tooling.
 
-- 🤝 [Wasp Discord](https://discord.gg/aCamt5wCpS)
+On top of that, this repository aims to provide a clearer story around launch, evaluation, and ongoing releases.
 
-## Getting Started
+## Technology stack
 
-### Simple Instructions
+The project is built around Wasp, with:
 
-First, to install the latest version of [Wasp](https://wasp.sh/) on macOS, Linux, or Windows with WSL, run the following command:
+- React on the client side.
+- Node.js on the server side.
+- Prisma for the data layer.
 
-```bash
-npm i -g @wasp.sh/wasp-cli
-```
+This stack is a strong fit for founders, indie hackers, consultants, and product teams that want a full‑stack JavaScript workflow with sensible conventions and integrated deployment guidance.
 
-Then, create a new SaaS app with the following command:
+If you are already comfortable with React and Node, Wasp provides structure, batteries‑included features, and a smoother path to production.
 
-```bash
-wasp new -t saas
-```
+## Product direction
 
-This will create a **clean copy of the Open SaaS template** into a new directory, and you can start building your SaaS app right away!
+This fork is intended to feel less like a generic template and more like a release‑quality starter product.
 
-### Detailed Instructions
+Key goals:
 
-For everything you need to know about getting started and using this template, check out the [Open SaaS Docs](https://docs.opensaas.sh).
+- Stronger first impression on GitHub.
+- Cleaner README and setup flow.
+- Better demo presentation and launch assets.
+- Higher confidence for new adopters evaluating the repository.
+- A clearer path to public releases, changelogs, and production deployment.
 
-We've documented everything in great detail, including installation instructions, pulling updates to the template, guides for integrating services, SEO, deployment, and more. 🚀
+Rather than adding highly opinionated, niche functionality, the focus is on polishing the core SaaS experience and making the project feel trustworthy as a starting point.
 
-## Getting Help & Providing Feedback
+## Launch principles
 
-There are two ways to get help or provide feedback (and we try to always respond quickly!):
+To keep the project useful as a general‑purpose SaaS starter, the focus is on operational excellence rather than narrow customization.
 
-1. [Open an issue](https://github.com/wasp-lang/open-saas/issues)
-2. [Wasp Discord](https://discord.gg/aCamt5wCpS) -- please direct questions to the #🙋questions forum channel
+That means prioritizing:
 
-## Development Tools
+- Clear setup and deployment guidance.
+- High‑quality default UX.
+- Reliable production checks.
+- Better repository hygiene.
+- Public release readiness.
 
-### Code Quality Tools
+In practice, this shows up through improved docs, better defaults, and a stronger emphasis on tagged releases and changelogs.
 
-This repository includes comprehensive code quality tooling to help maintain code standards:
+## Quickstart
 
-#### Prettier (Code Formatting)
-
-Prettier is configured for automatic code formatting across all JavaScript, TypeScript, and other supported files.
+If you want to get a local copy running quickly:
 
 ```bash
-# Check if files are formatted correctly
-npm run prettier:check
-
-# Automatically format all files
-npm run prettier:format
+git clone https://github.com/Nashwan-Dev/open-saas.git
+cd open-saas
+npm install
+# copy .env.example -> .env and fill required values
+npm run dev
 ```
 
-#### ESLint (Code Linting)
+For detailed instructions and integration‑specific setup (auth, payments, email, storage), refer to the upstream Open SaaS and Wasp documentation.
 
-ESLint is configured with TypeScript and React support to catch potential bugs and enforce code quality standards.
+## Getting started
 
-```bash
-# Run ESLint to check for issues
-npm run lint
+Recommended onboarding flow:
 
-# Automatically fix fixable issues
-npm run lint:fix
-```
+1. Clone this repository into your own GitHub account.
+2. Review the Open SaaS and Wasp documentation to confirm the expected local development workflow and required credentials.
+3. Configure the integrations you actually need first, especially authentication, payments, email, and storage.
+4. Run locally, validate the main user flows (sign‑up, sign‑in, billing, basic CRUD), then deploy a preview build early.
+5. Publish a first release only after the README, demo, and setup instructions are aligned.
 
-The ESLint configuration includes:
+Treat this repository as a starting point for your own product, not as an immutable template. Fork it, customize the UX, branding, and flows to match your use case.
 
-- TypeScript support with `@typescript-eslint`
-- React and React Hooks linting
-- Sensible defaults tuned for a SaaS application
-- Automatic support for CommonJS (.cjs), ES Modules (.mjs), and TypeScript files
+## Screenshots
 
-Both Prettier and ESLint checks are automatically run in CI/CD pipelines to ensure code quality.
+![Landing page](./docs/screenshots/landing.png)
+![Dashboard](./docs/screenshots/dashboard.png)
+![Billing & subscriptions](./docs/screenshots/billing.png)
 
-For information about other development tools used to maintain derived projects (like opensaas.sh and template-test), see [tools/README.md](./tools/README.md).
+Keeping these screenshots up to date with the latest tagged release helps new users quickly understand what they are getting.
+
+## Deployment
+
+For this repository, deployment quality should be treated as part of the product itself.
+
+A production‑ready release should include:
+
+- A working hosted demo.
+- A documented environment configuration process.
+- Clear guidance for auth, payment, email, and storage providers.
+- A changelog tied to tagged releases.
+- Screenshots or short demos that reflect the current UI.
+
+You can follow the upstream Open SaaS and Wasp deployment guidance and adapt it to your own hosting provider (e.g., one‑command deployment flows where possible).
+
+## What makes this fork different
+
+The goal is not to replace the upstream project.  
+The goal is to package it with a more polished launch experience, stronger repository presentation, and a clearer adoption path for developers who judge a project first by its documentation and release quality.
+
+Planned areas of improvement include:
+
+- Refined branding and repository presentation.
+- Better quick‑start guidance.
+- Demo‑focused UX polish.
+- More visible release management.
+- A stronger contributor experience.
+
+As the project evolves, these improvements will be captured through tagged releases and documented in the changelog.
+
+## Roadmap
+
+### Near‑term priorities
+
+- Rewrite and maintain a release‑grade README.
+- Add screenshots, demo links, and feature walkthroughs.
+- Publish the first tagged release.
+- Improve setup clarity for production integrations.
+- Add issue templates, contribution guidance, and release notes.
+
+### Longer‑term priorities
+
+- Demo data and onboarding improvements.
+- Better starter flows for first‑time users.
+- Stronger testing and launch validation.
+- More opinionated production defaults.
+
+Roadmap items are intentionally high‑level to keep this repository broadly applicable across different SaaS ideas.
 
 ## Contributing
 
-Note that we've tried to get as many of the core features of a SaaS app into this template as possible, but there still might be some missing features or functionality.
+Useful ways to contribute:
 
-We could always use some help tying up loose ends: contributions are welcome! Check out [CONTRIBUTING.md](/CONTRIBUTING.md) for more details.
+- Improve setup clarity.
+- Refine the default product UX.
+- Strengthen deployment reliability.
+- Improve docs, screenshots, and launch assets.
+- Report gaps between the README and real project behavior.
+
+If you open a pull request, try to keep it tightly scoped and include a brief explanation of the impact on new adopters and on existing users.
+
+## Who this is for
+
+This repository is a good fit for:
+
+- Founders validating a SaaS idea quickly.
+- Developers who want a strong open‑source alternative to paid starter kits.
+- Agencies and consultants who need a repeatable SaaS starting point.
+- Product teams that want to start from a modern full‑stack baseline instead of assembling common SaaS features from scratch.
+
+If you care about launch quality, documentation, and production readiness as much as code, this fork is designed with you in mind.
+
+## Credits
+
+This work stands on top of the Open SaaS project and the broader Wasp ecosystem.
+
+The upstream project is the technical foundation, and this repository aims to build on that foundation with a more polished public‑facing launch posture.
